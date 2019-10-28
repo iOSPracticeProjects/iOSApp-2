@@ -10,11 +10,21 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var mealName: UILabel!
+    @IBOutlet weak var EntertheNameTextField: UITextField!
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func SetDefaultMealName(_ sender: Any) {
+        
+        mealName.text = "Default Text"
+        
+        
+        
+    }
 
 }
 
